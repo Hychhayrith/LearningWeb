@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check armstrong number.</title>
+</head>
+<body>
+    <script>
+        var num = parseInt(window.prompt("Enter a number to check whether it is a three digit armstrong number or not."));
+        var temp = parseInt(num);
+        var sum = 0;
+        for(var i = 1; i <= 3; i++){
+            var remind = parseInt(num % 10);
+            console.log("remind = " + remind);
+            num = parseInt(num/10);
+            console.log("num = " + num );
+            
+            sum = sum + remind ** 3;
+            console.log("sum = " + sum);
+        }
+        console.log(sum);
+        if ( sum == temp ){
+            alert("It's an armstrong number.");
+        }else{
+            alert("It's not an armstrong number");
+        }
+    </script>
+</body>
+</html>

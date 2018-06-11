@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check if string contain number</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="textInput" id="inputText">
+        <br>
+        <input type="button" onclick="checkNum.check()" value="Button">
+    </form>
+
+    <script>
+        var checkNum = {
+            
+            // console.log(splitText),
+            check : function(){
+                // var checkNumber = /\d/g;
+                // var c = checkNum.test(this.textInput);
+                // console.log(c);
+                // if(checkNumber.test(this.textInput) == true){
+                //     alert("Input string contain number");
+                // }else{
+                //     alert("Input string not contain number");
+                // }
+                // var numberCheck = /^[A - Za - z] + $/;
+                // if(numberCheck.test(checkNumber)){
+                //     alert("The input string contain number");
+                // }else{
+                //     alert("The input string doesn't contain number");
+                // }
+                // console.log(checkNumber);
+                // var splitText = this.textInput.split("");
+                // for (var i = 0; i < this.splitText.length(); i++){
+                //     if((this.splitText[i] >= 48) && (this.splitText[i] <= 57)){
+                //         alert("The input string contain number.");
+                //         break;
+                //     }
+                // }
+                var textInput = document.getElementById("inputText").value;
+                console.log(textInput);
+                if(/[0-9]/.test(textInput)){
+                    alert("this string content number");
+                }else{
+                    alert("this string not contain any number");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to sum all the odd and even digit</title>
+</head>
+<body>
+    <form action="#">
+        <input type="number" name="number" id="num">
+        <br>
+        <input type="button" onclick="sumOdd()" value="Click me">
+    </form>
+
+    <script>
+        function sumOdd(){
+            var num = parseInt(document.getElementById("num").value);
+            console.log("Num " + num);
+            var count = 0;
+            var sum = 0;
+            var tmp = num;
+            while(num > 0){
+                var remind = num % 10;
+                num = parseInt(num / 10);
+                count++;
+                if(count % 2 == 1){
+                    sum = sum + remind;
+                    console.log(sum);
+                }
+            }
+            document.write("sum of odd num is " +sum + "<br>");
+            count = 0;
+            var premSum = 0;
+            remind = 0;
+            while(tmp > 0){
+                var remind = tmp % 10;
+                console.log("remind" + remind);
+                tmp = parseInt(tmp / 10);
+                console.log("temp " + tmp);
+                count++;
+                if(count % 2 == 0){
+                    premSum = premSum + remind;
+                }
+                console.log("sum " + premSum);
+            }
+            document.write("sum of even number is " + premSum);
+
+        }
+    </script>
+</body>
+</html>

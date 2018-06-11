@@ -1,0 +1,46 @@
+*{
+    background: #3b3b3b;
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+table, tr, td, th{
+    /* border: 1px solid white; */
+    border-collapse: collapse;
+    padding: 5px;
+}
+tr{
+    width: 800px;
+}
+th{
+    color: #fff;
+    background: rgb(218, 142, 92);
+    font-weight: 700;
+}
+ td{
+    width: 300px;
+    font-weight: lighter;
+    text-shadow: 0.2px 0.3px 0.1px rgb(160, 134, 134);
+    font-size: 12px;
+    color: rgb(65, 60, 60);
+    padding-left: 15px;
+}
+
+.odd td{
+    background: #fff;
+}
+.even td{
+    background: rgb(218, 211, 211);
+}
+.age{
+    width: 50px;
+    text-align: center;
+}

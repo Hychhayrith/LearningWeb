@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript basic Exercises from W3resources</title>
+</head>
+<body>
+    <div id="instruction"></div>
+    <div id="output"></div>
+    
+    
+
+    
+
+
+
+
+    <script>
+        // exercise1();
+        // exercise10();
+        // exercise20();
+        
+
+
+
+
+            function exercise1(){
+                document.getElementById("instruction").innerHTML = ("Instruction: Display current date and time.");
+                var getDate = new Date();
+                var getDay = getDate.getDate();
+                var getMonth = getDate.getMonth();
+                var getYear = getDate.getFullYear();
+                setTimeout(()=>{
+                    var displayTxt = document.getElementById("output");
+                    displayTxt.innerHTML = "The date for today is " + getDay + ' ' + (getMonth + 1) + ' ' + getYear;
+                },1000);
+                
+            }
+
+            function exercise10(){
+                document.getElementById("instruction").innerHTML = "Instruction: Get input from user and do the Multiplication and Division the two number.";
+                document.getElementById("output").innerHTML = "<form action='GET' ><input type='number' id='numInput1' placeholder='Input first number' height='50' width='200'><br><input type='number' id='numInput2' placeholder='Input second number' height='50' width='200'><input type='submit' value='submit' onclick='fn()'></form>";
+                this.fn = ()=>{
+                    this.firstNum = document.getElementById("numInput1").value;
+                    this.secondNum = document.getElementById("numInput2").value;
+                    document.getElementById("output").innerHTML = "The multiplication of first number and second number is: " + (this.firstNum * this.secondNum) + ". <br> The division of first number and second number is : " + (this.firstNum / this.secondNum);
+                }
+                
+            }
+
+            function exercise20(){
+                document.getElementById("instruction").innerHTML = "Instruction: get the two input number and check whether the first one is positive and second one is negative.";
+                document.getElementById("output").innerHTML = '<form action="">'+
+                    '<input type="number" name="num1" id="fNum" placeholder="input first number" width="300" height="100">'+
+                        '<br>'+
+                        '<br>'+
+                        '<input type="number" name="num2" id="sNum" placeholder="input second number" width="300" height="100">'+
+                        '<input type="submit" value="submit" onclick="checkNum()">'+
+                    '</form>';
+
+                this.checkNum = ()=>{
+                    var fNum = document.getElementById("fNum").value;
+                    var sNum = document.getElementById("sNum").value;
+                    document.getElementById("output").innerHTML = ((fNum > 0) ? "The first number positive." : "This first number is not positive.") + ((sNum < 0) ? "And the second number is negative." : "And second number is not negative.");
+                }
+            }
+    </script>
+</body>
+</html>

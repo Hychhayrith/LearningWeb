@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Searching machine</title>
+</head>
+<body>
+    <h1>Input array with the separate using comma (,)</h1>
+    <input type="text" id="arr">
+
+    <br><br>
+    <p>Enter an element to search</p>
+    <input type="text" id="srch">
+    <button type="button" onclick="search()">Search</button>
+    <p id="result"></p>
+
+
+
+    <script>
+        
+        
+        var search = () => {
+            var input = document.getElementById("arr").value;
+            console.log("input: ", input);
+            var arr = input.split(", ");
+            console.log("splited array: ", arr);
+            var srch = document.getElementById("srch").value;
+            var flag = -1;
+            for(i = 0; i < arr.length; i++){
+                if(srch == arr[i]){
+                    document.getElementById("result").innerHTML = srch + " located in " + (i + 1) + " place.";
+                    flag = 1;
+                    break;
+                    return flag;
+                }
+            }
+            if(flag == -1){
+                document.getElementById("result").innerHTML = srch + "not found";
+            }
+        }
+    </script>
+</body>
+</html>

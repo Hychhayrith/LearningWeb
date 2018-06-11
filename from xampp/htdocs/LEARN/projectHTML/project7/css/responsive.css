@@ -1,0 +1,120 @@
+@media screen and (min-width: 1300px) {
+    .top {
+        width: 1300px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bottom {
+        margin: 0 auto;
+        width: 1300px;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .top {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bottom {
+        margin: 0 auto;
+        width: 1000px;
+    }
+    .imgAds {
+        width: 700px;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 999px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .top {
+        width: 800px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bottom {
+        margin: 0 auto;
+        width: 800px;
+    }
+    .imgAds {
+        width: 550px;
+        padding: 15px 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 799px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .top {
+        width: 600px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bottom {
+        margin: 0 auto;
+        width: 600px;
+    }
+    .imgAds{
+        width:0;
+        height:0;
+    }
+    .rightTopNav{
+        width:0;
+    }
+    .leftTopNav{
+        width: 100%;
+    }
+    li.item{
+        padding: 13px 15px;
+        color: #fff;
+        float: left;
+        font-size: 20px;
+        font-weight:  lighter;
+        font-family: 'Roboto', sans serif;
+        text-align: left;
+        background: linear-gradient(to bottom, #e09699 30%, #D90C16 93%);
+        background-size: 100% 0em;
+        background-position: 0 88%;
+        background-repeat: no-repeat;
+    }
+}
+
+/* @media screen and (max-width: 599px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .top {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .bottom {
+        margin: 0 auto;
+        width: 400px;
+    }
+    .imgAds{
+        width: 0;
+        height: 0;
+    }
+    .item{
+        padding: 13px 15px;
+    }
+    .leftTopNav{
+        width: 100%;
+    }
+} */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>program to check if input number contain character or not</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="inputNum" id="num">
+        <br>
+        <input type="button" value="Click me" onclick="checkChar.charCheck()">
+    </form>
+
+    <script>
+        var checkChar = {
+            charCheck: function(){
+                var num = document.getElementById("num").value;
+                var str = /[a-zA-Z]/;
+                if(str.test(num)){
+                    alert("The input number contain character.");
+                }else{
+                    alert("The input number not contain character");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

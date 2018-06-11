@@ -1,0 +1,2 @@
+link: https://codepen.io/Thomascullen/pen/GvPbYm/
+purpose: subscribe page.

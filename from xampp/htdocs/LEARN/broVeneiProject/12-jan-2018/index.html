@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>12/Jan/2018</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Make the Alfred Website</h1>
+    <div class="text">
+        <h4>scrolldown btn</h4>
+        <p>Give postion fixed;</p>
+        <hr>
+        <h4>Page wrapper</h4>
+        <p>position relation</p>
+    </div>
+
+    <hr>
+    <h1>SCSS use the complilor to check the error</h1>
+    <div class="text"> 
+        <p>Add output path to the scss to compile</p>
+    </div>
+    <hr>
+    <h1>Collapse error THE FLOAT PROBLEM</h1>
+    <div class="text">
+        <p>when height have zero when inspect so the probelem is collapse because we use the float. </p>
+        <p>So to fix: we need to use before and after element.</p>
+        <p>We need to mention only the parent class not child class</p>
+        <pre>
+        
+            .navigation .second::before,
+            .navigation .second::after{
+                display: table;
+                content: "";
+            }
+        
+            .navigation::after{
+                clear: both;
+            }
+        </pre>
+        <p>so the collapse problem is fixed.</p>
+        <p>Or we can use the overflow property</p>
+        <pre>
+            .navigation .second{
+                overflow: auto;
+            }
+            </pre>
+        <p>Then if there is some slidebar we can use the </p>
+        <pre>
+            .navigation .second{
+                overflow: hidden;
+            }
+            </pre>
+        <hr>
+        <p>The last property of the style will overwrite the before property of the class.</p>
+    </div>
+
+    <hr>
+    <h1>The Trick From brother Vinei and Csstrick.com</h1>
+    <div class="text">
+        <h4>SCSS use the complilor to check the error</h4>
+        <p>Add output path to the scss to compile</p>
+        <p>Add normalize css to fit the edge of the screen.</p>
+        <hr>
+        <h4>give unit as %</h4>
+        <p>It will be very good for website when it comes to the responsive</p>
+
+        <hr>
+        <p>We should overwrite the item to the display the inline block;</p>
+        <hr>
+        <p>Padding is recommend to use more than margin</p>
+        <hr>
+        <p>text-transform: uppercase; use to transform text to uppercase </p>
+        <hr>
+        <p>property nth:child(number) use to specify the child class to overwrite some style</p>
+        <pre>
+            .link-item:nth-child(1){ // 1 for first child.
+                padding-left: 0;
+            }
+        </pre>
+    </div>
+
+</body>
+</html>

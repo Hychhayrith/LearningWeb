@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Replace the even character with its index number</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <form id="replaceChar">
+                <h2>Program to replace the even character with its index number</h2>
+                <div class="form-group">
+                    <input type="text" name="str" id="str" class="form-control" placeholder="Input sentence here">
+                    
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script>
+        document.getElementById("replaceChar").addEventListener("submit", replace);
+        function replace(e){
+            var str = document.getElementById("str").value;
+            console.log("This string:" + str);
+            strSplit(str);
+
+
+            document.getElementById("replaceChar").reset();
+            e.preventDefault();
+        }
+        function strSplit(str){
+            var strImport = str;
+            this.splt = strImport.split("");
+            replaceStr(this.splt);
+        }
+        function replaceStr(splt){
+            
+            var splitString = [];
+            splitString = splt;
+            console.log("This split is: " + splitString);
+            for(var i = 0; i < splt.length; i++){
+                if(i % 2 == 0){
+                    console.log(i + splitString[i]);
+                    splitString[i] = i;
+                }
+            }
+            var finalStr = splitString.join("");
+            alert(finalStr);
+            
+        }
+        
+    </script>
+</body>
+</html>

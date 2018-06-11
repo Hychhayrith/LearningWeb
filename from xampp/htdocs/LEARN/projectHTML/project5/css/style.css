@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: #000;
+    margin: 0 auto;
+    background-color: #fff;
+    font-size: 18px;
+    font-family: 'Roboto', sans serif;
+    font-weight: lighter;
+}
+
+div .background {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    background: url('../img/background.jpg');
+    background-color: #007ece;
+    position: relative;
+    color: #fff;
+    background-size: 100% 250%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: block;
+    height: 600px;
+    
+}
+
+div .background:before {
+    background-color: #007ece;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    color: #fff;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: block;
+    height: 400px;
+    opacity: 0.5;
+    filter: blur(25px);
+}
+
+.backgroundCaption {
+    padding: 10em 0 7em 0;
+    line-height: 70px;
+    /* border: 1px solid black; */
+    width: auto;
+    position: relative;
+}
+
+.backgroundHeading {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.backgroundText {
+    font-size: 30px;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+.order{
+    color: #fff;
+    font-size: 25px;
+    /* font-weight: bold; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+.orderButton{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    background: #0a79be;
+    border-radius: 4px;
+}
+.orderButton:hover{
+    background: #007ece;
+}
+
+.productDetail{
+    background-color: #fff;
+    /* width: 1000px; */
+    margin: 1 auto;
+    min-height: 250px;
+    text-align: justify;
+    position: relative;
+
+}
+
+.productImage{
+    /* width: 25%; */
+    float: left;
+    padding: 20px;
+    text-align: right;
+}
+.clear::before,
+.clear::after{
+    content: "";
+    display: table;
+}
+.clear::after{
+    clear: both;
+}
+
+.productCaption{
+    width: 70%;
+    padding: 20px;
+    color: #1c262b;
+    font-weight:  lighter;
+}
+.captionHeading{
+    font-size: 30px;
+    font-family: 'Roboto', sans serif;
+    text-align: center;
+    padding: 15px;
+}
+.captionText{
+    text-align: left;
+}
+
+img.productImg {
+    width: 25%;
+    padding: 20px;
+}
+
+.sectionPrimary {
+    color: #fff;
+    background-color: #007ece;
+    /* margin: 30px 0; */
+    height: 300px;
+}
+.sectionPrimary1 {
+    color: #fff;
+    background-color: #27a4f4;
+    /* margin: 30px 0; */
+    height: 300px;
+}
+
+.sectionPrimary2 {
+    color: #fff;
+    background-color: rgba(0, 126, 206, 0.1);
+    /* margin: 30px 0; */
+    height: 300px;
+}
+.sectionPrimary3 {
+    color: #fff;
+    background-color: #27a4f4;
+    /* margin: 30px 0; */
+    height: 300px;
+    width: 100%;
+}
+.primary3Bg{
+    background-image: url("../img/kids3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment:fixed;
+    background-position: 0;
+    filter: blur(1px);
+    z-index: 1;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+.sectionPrimary3 > *:not(primary3Bg){
+    z-index: 2;
+    position: absolute;
+}
+.sectionContainer{
+    width: 1000px;
+    margin: 0 auto;
+    position:  relative;
+}
+.section{
+    
+width: 25%;
+    
+float: left;
+    
+padding: 70px 10px;
+    
+text-align:  center;
+}
+.icon{
+    
+font-size: 50px !important;
+    
+padding: 20px;
+    
+text-align:  center;
+}
+.sectionHeading{
+
+font-size:  30px;
+
+text-align:  center;
+
+padding: 30px 0;
+
+font-weight: lighter;
+}
+.qouteContainer{
+    
+width: 500px;
+    
+margin: 0 auto;
+    
+padding: 50px;
+}
+blockquote{
+    
+font-style: italic;
+    
+color: #999999;
+    
+font-size:  20px;
+}
+.quoteAuthor{
+    
+text-align: right;
+    
+font-style: italic;
+    
+color: #d0cece;
+}

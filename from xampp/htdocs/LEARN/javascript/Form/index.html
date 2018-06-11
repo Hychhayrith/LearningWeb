@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Form page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hy Chhayrith">
+    <meta name="description" content="This form page is use for the form set of the html to use on the purpose of learning the Javascript.">
+    <meta name="keywords" content="form, hy Chhayrith, set, Javascript">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    
+</head>
+<body>
+    <!-- Some Text -->
+    <p>Click the button to print the page</p>
+    
+    <button type="button" onclick="theClickFunction()">Click Here</button>
+    
+
+    <!-- Print the current date -->
+    <p>I will print the current date without using the default new Date() method.</p>
+    <p>Click button to see the current date but not use default method</p>
+    <button onclick="date()">Click Here</button>
+    <p id="date"></p>
+
+    <!-- Calution of the triangle area -->
+    <h2>Calculate the area of the triangle</h2>
+    
+        <fieldset>
+            <legend>
+                Fill the width, height, and the longest length of the triangle
+            </legend>
+            <input type="number" name="width" id="width" placeholder="Width" required>
+            <br>
+            <input type="number" name="height" id="height" placeholder="height" required>
+            <br>
+            <input type="number" name="longest" id="longest" placeholder="Longest Length" required>
+            <br>
+            <input type="button" onclick="area()" value="Calculate">
+        </fieldset>
+        <p id="area">hi</p>
+    
+        <script src="js/main.js"></script>
+        <script>
+            
+            function area() {
+                    var width = parseInt(document.getElementById("width").value);
+                    var height = parseInt(document.getElementById("height").value);
+                    var long = parseInt(document.getElementById("longest").value);
+                    // console.log(width);
+                    // console.log(height);
+                    // console.log(long);
+                    var perimeter = (width + height + long)/2;
+                    var area = Math.sqrt(perimeter*(perimeter - width)*(perimeter - height)*(perimeter - long));
+                    // console.log('this is value: ');
+                     console.log(area);
+                    // value = p;
+                    // console.log(value);
+                    document.getElementById("area").innerHTML = parseInt(area);
+                }
+            
+        </script>
+</body>
+</html>

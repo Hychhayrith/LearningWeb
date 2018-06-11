@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var str = "I just watched a coding challenge";
+        var spl = str.split('');
+
+        document.write(typeof str + "<br>");
+        document.write(typeof spl + "<br>");
+        document.write("The string is: " + str + "<br>");
+        document.write("The array of splited string is: " + spl + "<br>");
+
+        document.write("So array is also an object in Js: " + (spl instanceof Array) );
+
+
+        var hcr = "Hy Chhayrith";
+        var myName = new String(hcr);
+        var splName= myName.split('');
+
+        document.write("<br>" + typeof hcr + "<br>");
+        document.write(typeof myName+ "<br>");
+        document.write(splName);
+
+
+    </script>
+</body>
+</html>

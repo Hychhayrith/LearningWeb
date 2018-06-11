@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hy Chhayrith">
+    <meta name="description" content="The form to login and sign up to the titan.com">
+    <meta name="keywords" content="form, titan, hy chhayrith, login, signup">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="https://use.fontawesome.com/6b826201a0.js"></script>
+
+</head>
+<body>
+    <!-- page wrapper -->
+    <div class="pageWrapper">
+        <!-- navigation bar -->
+        <div class="navBar">
+            <div class="navContainer">
+                <!-- left nav -->
+                <div class="navLeft">
+                    <ul class="list">
+                        <li class="item">Home</li>
+                        <li class="item">Blog</li>
+                        <li class="item">About Us</li>
+                        <li class="item">Contact Us</li>
+                    </ul>
+                </div>
+
+                <!-- right nav -->
+                <div class="navRight">
+                    <div class="navRightContainer">
+                        <div class="leftAlign">
+                            <input type="text" class="search" name="search" id="search" placeholder=" search " required>
+                        </div>
+
+                        <div class="rightAlign">
+                            <button type="submit" class="searchBtn">
+                                <i class="fa fa-search fa-2x"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container -->
+        <div class="container" id="container">
+            <div class="containerTop">
+                <img src="img/logo2.png" alt="The Titan Logo" class="titanLogo">
+                <div class="headingText">welcome to titan.com</div>
+                <div class="link">
+                    <a href="#" class="linkBtn">Goto Home page</a>
+                </div>
+                
+                <a href="#containerBottom" class="arrowDown">
+                    <i class="fa fa-arrow-down fa-3x"></i>
+                </a>
+                
+            </div>
+
+            <div class="containerBottom" id="containerBottom">
+                <div class="dialogContent">
+
+                    <div class="tabContent">
+                        <div id="signUp" class="signUp">
+                            <legend>Sign Up For Free</legend>
+                            <input type="text" name="fName" id="fName" class="name" placeholder="First name*" required>
+                            <input type="text" name="lName" id="lName" class="name" placeholder="Last name*" required>
+                            <input type="email" name="email" id="email" class="inputBox" placeholder="Mail*" required>
+                            <input type="password" name="password1" id="pass1" class="inputBox" placeholder="Password*" required>
+                            <input type="password" name="password2" id="pass2" class="inputBox" placeholder="Confirm Password*" required>
+                            <button type="submit" class="submit">Get Started</button>
+                        </div>
+
+                        <div id="login" class="Login">
+                            <legend>Log In To Titan</legend>
+                            <input type="email" name="email" id="email" class="inputBox" placeholder="Email*" required>
+                            <input type="password" name="pass" id="pass" class="inputBox" placeholder="Password*" required>
+                            <div class="instrucRight">
+                                <span class="instruc">Forgot password?</span>
+                            </div>
+                            
+                            <button type="submit" class="submit">Log In</button>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer">
+            <span>copyright&COPY; 2018 TITAN GROUP. All Rights Reserved.</span>
+        </div>
+    </footer>
+</body>
+</html>

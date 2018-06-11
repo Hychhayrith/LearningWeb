@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program of fabonacci series</title>
+</head>
+<body>
+    <script>
+        var first = parseInt(window.prompt("Enter the first number: "));
+        var second = parseInt(window.prompt("Enter the second number: "));
+        var term = parseInt(window.prompt("Enter the term of the fabonacci number. "));
+        document.write(first + " " + second + " ");
+        var object = new Object;
+        function fabonacci(){
+            for( var i = 0; i < term ; i++){
+                var sum = 0;
+                sum = first + second;
+                console.log("sum = " + sum);
+                document.write(sum + " ");
+                first = second;
+                console.log("first = " + first);
+                second = sum;
+                console.log("second = " + second);
+            }
+            return "";
+        }
+        document.write(fabonacci());
+    </script>
+</body>
+</html>

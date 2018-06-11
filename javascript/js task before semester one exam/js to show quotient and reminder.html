@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>program to show the quotient and reminder</title>
+</head>
+<body>
+    <script>
+        var program = {
+            firstNum : 5,
+            secondNum : 2,
+            quotient : function(){
+                var quotient = this.firstNum / this.secondNum;
+                return quotient;
+            },
+            reminder : function (){
+                var reminder = this.firstNum % this.secondNum;
+                return reminder;
+            }
+        }
+        alert(program.quotient());
+        alert(program.reminder());
+    </script>
+
+</body>
+</html>

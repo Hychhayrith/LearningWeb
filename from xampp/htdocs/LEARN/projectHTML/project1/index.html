@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flaot Label Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hy Chhayrith">
+    <meta name="description" content="This webpage is to show about the float content">
+    <meta name="keywords" content="float, webpage, label">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+</head>
+<body>
+    <!-- Center align -->
+    <center>
+        <!-- Float Label form -->
+        <form action="data/php" method="get">
+            <!-- form title -->
+            <legend>
+                Float Label Demo
+            </legend>
+
+            <!-- Input -->
+            <div class="inputControl">
+                <input type="text" name="title" placeholder="Title" required>
+                <!-- <label for="title">Title</label> -->
+            </div>
+            
+            <div class="inputControl small">
+                <input type="text" name="price" placeholder="Price" required>
+                <!-- <label for="price">Price</label> -->
+            </div>
+
+            <div class="inputControl large">
+                 <input type="text" name="location" placeholder="Specific Location (Optional)" required>
+                 <!-- <label for="location">
+                     Specific Location (Optional)
+                 </label> -->
+            </div>
+
+            <div class="inputControl no-border">
+                <input type="textarea" name="description" placeholder="Description" required>
+                <!-- <label for="description">Description</label> -->
+            </div>
+            <div class="inputControl">
+                <input type="submit" name="submit" class="submitBtn">
+            </div>
+
+        </form>
+
+    </center>
+</body>
+</html>

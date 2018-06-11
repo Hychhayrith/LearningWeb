@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check if the string contain special symbol or not.</title>
+</head>
+<body>
+   <form action="#">
+       <input type="text" name="str" id="str">
+       <br>
+       <input type="button" value="Click me" onclick="check.symbChk()">
+   </form> 
+
+    <script>
+        var check = {
+            symbChk : function(){
+                var str = document.getElementById("str").value;
+                var symb = /[!@#$%^&*()-_=+{};:'"',<.>/?|]/;
+                console.log(symb.test(str));
+                console.log(str.match(symb));
+                if(symb.test(str)){
+                    alert("Input string contain special symbol");
+                }else{
+                    alert("The string doesn't contain special symbol");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

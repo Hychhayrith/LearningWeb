@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bubble sort</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        var arr = [2, 1, 5, 3, 9, 3, 65, 23,21, 1];
+        console.log(arr);
+        var len = arr.length;
+        var temp;
+        document.write("<h2>Array before convert to bubble sort</h2>");
+        for(i = 0; i < len; i++){ document.write(arr[i] + '<br>');}
+        document.write("<button type='button' onclick='bubbleSort()'>Bubble Sort</button>");
+        var bubbleSort = () => {
+            for(i = 0; i < len -1; i++){
+                for(j = 0; j < len - i - 1; j++){
+                    if(arr[j] > arr[j+1]){
+                        temp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            document.write("<h2 style='color: purple;'>Bubble sorted</h2>");
+            for(i = 0; i < len; i++){
+                document.write(arr[i] + "<br>");
+            }
+        }
+
+    </script>
+</body>
+</html>

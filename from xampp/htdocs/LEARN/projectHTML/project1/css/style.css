@@ -1,0 +1,81 @@
+@border: 1px solid #ddd;
+@padding: 10px;
+@label-font-size: 13px;
+form {
+    width: 600px;
+    margin: 2em auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 22px;
+    font-weight: initial;
+}
+
+legend {
+    border-bottom: 1px solid #ddd;
+    font-size: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    position: sticky;
+}
+
+.inputControl {
+    width: 100%;
+    position: relative;
+    font-size: 22px;
+    float: left;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+input,
+textarea {
+    border: 0;
+    width: 100%;
+    display: block;
+    outline: 0;
+    resize: none;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
+/* input label {
+    position: absolute;
+    top: 10px;
+    transition: top 0.7s ease, opacity 0.7s ease;
+    opacity: 0;
+    font-size: 13px;
+    color: #ccc;
+    font-weight: 600;
+} */
+
+
+.no-border {
+    border: 0;
+}
+
+.small {
+    width: 30%;
+    float: left;
+    position: relative;
+}
+
+.large {
+    width: 68%;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+.submitBtn{
+    padding: 15px;
+    color:#ddd;
+    font-size: 17px;
+    background-color: rgba(23, 103, 177, 0.849);
+    border:0;
+    border-radius: 5px;
+    width: 20%;
+    margin-top: 20px;
+}
+.submitBtn:hover{
+    color: #fff;
+}

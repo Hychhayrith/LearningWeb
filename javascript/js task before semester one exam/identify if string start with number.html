@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to identify the first letter of string is number</title>
+</head>
+<body>
+    
+    <form action="#">
+        <input type="text" name="text1" id="inputText">
+        <br>
+        <input type="button" value="Click me" onclick="checkString()">
+    </form>
+
+
+    <script>
+        function checkString(){
+            var numContain = /^[0 - 9]/;
+            var textInput = document.getElementById("inputText").value;
+            if(/^[0-9]/.test(textInput)){
+                alert("This string contain number at first");
+            }else{
+                alert("This string not contain number at first");
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>

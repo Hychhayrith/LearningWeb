@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Binary search</title>
+</head>
+<body>
+    <div id="intro">
+    </div>
+
+    <h1>Input array with the separate using comma (,)</h1>
+    <input type="text" id="arr">
+
+    <br><br>
+    <p>Enter an element to search</p>
+    <input type="text" id="srch">
+    <button type="button" onclick="search()">Search</button>
+    <p id="result"></p>
+
+
+
+
+
+
+    <script>
+        function search(){
+            var input = document.getElementById("arr").value;
+            var srch = document.getElementById("srch").value;
+            var arr = input.split(", ");
+            var len = arr.length;
+            for(i = 0; i < len; i++){
+                arr[i] = parseInt(arr[i]);
+            }
+            console.log("Array : ", arr);
+            var beg = 0;
+            var last = len - 1;
+            var mid = parseInt((beg + last)/2);
+            var temp = null;
+            for(i = 0; i < len; i++){
+                for(j = 0; j < len - 1; j++){
+                    if(arr[j] > arr[j + 1]){
+                        temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+                
+            }
+            console.log("array after ascending order: ", arr);
+            console.log("mid ", mid);
+            for(i = 0; i < len; i++){
+                if(arr[mid] == srch){
+                    break;
+                }else if(arr[mid] < srch){
+                    beg = mid + 1;
+                    mid = parseInt((beg + last)/2);
+                }else{
+                    last = mid -1;
+                    mid = parseInt((beg + last)/2);
+                }
+                console.log("loop " + (i + 1) + " time");
+                console.log("mid ", mid);
+            }
+            
+            document.getElementById("result").innerHTML = srch + " found in " + (i + 1) + " step(s)";
+        }
+
+
+    </script>
+</body>
+</html>

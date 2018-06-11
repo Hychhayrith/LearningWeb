@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+}
+
+.pageWrapper {
+    width: 100%;
+    background: #fff;
+    border-bottom: 2px solid #1271ff;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1300px;
+    height: 50px;
+    /* padding: 5px; */
+}
+.nav{height: 50px;}
+.navBar{
+    height: 50px;
+    background: none;
+}
+
+.left {
+    float: left;
+    width: 20%;
+    position: relative;
+    padding: 10px 0;
+}
+
+.logo {
+    color: #777777;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    text-decoration:  none;
+    padding: 15px 20px;
+    background:linear-gradient(to bottom, #e6f5fd 30%, #1271ff 93%);
+    background-size:100% 0em;
+    background-position:0 88%;
+    background-repeat:no-repeat;
+}
+a.logo:hover {
+    background-color: #1271ff;
+    height: 50px;
+    padding: 18px;
+    transition: background-size .25s ease-in;
+    background-size:100% 99%;
+}
+a.linkList {
+    text-decoration:  none;
+    background:linear-gradient(to bottom, #e6f5fd 30%, #1271ff 93%);
+    background-size:100% 0em;
+    background-position:0 88%;
+    background-repeat:no-repeat;
+    padding:16px;
+}
+a.linkList:hover {
+    background-color: #1271ff;
+    height: 50px;
+    transition: background-size .25s ease-in;
+    background-size:100% 99%;
+}
+.active{
+
+}
+
+.right{
+    height:  50px;
+    float: right;
+    display: block;
+    font-size: 18px;
+    color: #777777;
+}
+
+.navigationList{
+    height: 50px;
+    display: inline-block;
+    width: auto;
+    margin-right: 50px;
+}
+
+.item{
+    display: inline-block;
+    list-style: none;
+    padding: 15px 20px;
+    font-family: 'Roboto', sans serif;
+    font-weight: 300;
+}
+
+
+.clearBoth::before,
+.clearBoth::after{
+    content:"";
+    display:table;
+}
+
+.clearBoth::after{
+    clear:both;
+}
+@media screen and (min-width: 1200px){
+    .container{
+        width:1300px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1999px){
+    .container{
+        width:1000px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 999px){
+    .container{
+        width:800px;
+    }
+    .navigationList{
+        margin-right:20px;
+    }
+    .item{
+        padding:15px 0px;
+    }
+}

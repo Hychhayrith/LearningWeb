@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>program to check consonent or vowel</title>
+</head>
+<body>
+    <script>
+        var input = prompt("Enter any Alphabet");
+        var objectToCheck = new Object();
+        function checkAlpha (){
+            if((input >= 'a' && input <= 'z') || (input >= 'A' && input <= 'Z')){
+                switch(input){
+                    case 'a': case 'e': case 'i': case 'o': case 'u': case 'A': case 'E': case 'I': case 'O': case 'U':
+                        return ("The input character is VOWEL");
+                        break;
+                    default:
+                        return ("The input character is CONSONENT");
+                }
+            }else{
+                return ("Please enter alphabet only.");
+            }
+        }
+        objectToCheck.check = checkAlpha;
+        alert(objectToCheck.check());
+        </script>
+</body>
+</html>

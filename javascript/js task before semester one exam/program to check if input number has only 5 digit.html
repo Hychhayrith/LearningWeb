@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check if the input number has 5 digits or more than that</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="num" id="num">
+        <br>
+        <input type="button" value="click Me" onclick="checkDigit()">
+    </form>
+    <script>
+        function checkDigit(){
+            var num = document.getElementById("num").value;
+            console.log(num);
+            if(/[a-zA-Z]/.test(num)){
+                alert("The input number contain character");
+                break;
+            }else{
+                if(/[0-9]/.test(num)){
+                    //alert("The input number contain less than 5 digit and it has number only");
+                    var count = 0;
+                    while(num > 0){
+                        num = parseInt(num/10);
+                        count++;
+                    }
+                    if(count == 5){
+                        alert("The input number contain 5 digit");
+                    }else if(count > 5){
+                        alert("The input number contain more than 5 digit.");
+                    }else{
+                        alert("The input number contain less tha  5 digit");
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

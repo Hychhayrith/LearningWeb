@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to print odd digit</title>
+</head>
+<body>
+    <form action="#">
+        <input type="number" name="num" id="num">
+        <br>
+        <input type="button" value="Click me" onclick="checkOdd.oddDigit()">
+    </form>
+
+    <script>
+        var checkOdd = {
+            oddDigit : function(){
+                var numberInput = parseInt(document.getElementById("num").value);
+                console.log("Input number" + numberInput);
+                while(numberInput > 0){
+                    var remind = numberInput % 10;
+                    numberInput = parseInt(numberInput / 10);
+                    if(remind % 2 == 1 ){
+                        document.write(remind);
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

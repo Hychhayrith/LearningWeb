@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 15px;
+    background: #fff;
+}
+
+.navBar {
+    width: 800px;
+    margin: 0 auto;
+}
+
+ul{
+    position: relative;
+    display: block;
+    top: 20px;
+    background: #eee;
+    list-style: none;
+    padding: 5px;
+}
+li{
+    display: inline-block;
+    background: #eee;
+}
+

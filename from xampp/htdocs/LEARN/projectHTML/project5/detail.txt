@@ -1,0 +1,3 @@
+link: https://codepen.io/l4ci/pen/LoGjk?q=landing%20page&order=popularity&depth=everything&show_forks=false
+purpose: landing page
+type: business

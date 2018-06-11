@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check wether the sting contain @ symbol or not</title>
+</head>
+<body>
+    <form action="#">
+        <input type="text" name="text" id="inputText">
+        <br>
+        <input type="button" value="Click me" onclick="Obj.checkString()">
+    </form>
+
+    <script>
+        var Obj = {
+            checkString : function(){
+                var inputText = document.getElementById("inputText").value;
+                var check = inputText.includes("@");
+                if(check == true){
+                    alert("The input string contain @ symbol");
+                }else{
+                    alert("This input string doesn't contain @ symbol");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

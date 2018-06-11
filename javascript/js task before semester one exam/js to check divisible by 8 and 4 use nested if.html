@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to check if input number is divisible by 8 and 4</title>
+
+</head>
+<body>
+    <script>
+        var check = new Object();
+        function checkNum(num) {
+            if ( num % 8 == 0){
+                if (num % 4 == 0){
+                    return ("DIVISIBLE BY 8 AND 4");
+                }else{
+                    return ("NOT DIVISIBLE");
+                }
+            }else{
+                return ("NOT DIVISIBLE");
+            }
+        }
+        check.divisionChecking = checkNum;
+        alert("The 16 is " + check.divisionChecking(16));
+
+    </script>
+</body>
+</html>

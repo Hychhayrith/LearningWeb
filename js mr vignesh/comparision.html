@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Webpare to compare 3 input from user.</title>
+</head>
+<body>
+    <form action="#">
+        <input type="number" name="firstNum" id="x"><br>
+        <input type="number" name="secondNum" id="y"><br>
+        <input type="number" name="thirdNum" id="z">
+        <input type="submit" value="Submit">
+    </form>
+    <p id="result"></p>
+    
+
+
+    <script>
+        var x = document.getElementById("x").value;
+        x = parseFloat(x);
+        var y = document.getElementById("y").value;
+        y = parseFloat(y);
+        var z = document.getElementById("z").value;
+        z = parseFloat(z);
+        compare(x, y, z);   
+        function compare(x, y, z){
+            if(x > y){
+                if(x > z){
+                    document.getElementById("result").innerText = x + " is biggest";
+                }else{
+                    document.getElementById("result").innerText = z + " is biggest";
+                }
+            }else{
+                if(y > z){
+                    document.getElementById("result").innerText = y + " is biggest";
+                }else{
+                    document.getElementById("result").innerText = z + " is biggest";
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>

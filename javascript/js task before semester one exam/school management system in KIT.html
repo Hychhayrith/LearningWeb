@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School management system in Cambodia</title>
+</head>
+<body>
+    <form action="#">
+        Student Name: 
+        <input type="text" name="studentName" id="stName">
+        <br>
+        Student Age: 
+        <input type="number" name="studentAge" id="stAge">
+        <br>
+        Student Batch: 
+        <input type="number" min="1" max="4" id="stBatch" name="stBatch">
+        <br>
+        Student Gender:
+        <input type="text" name="studentGender" id="stGender">
+        <br>
+        <input type="button" onclick="">
+    </form>
+
+
+    <script>
+        var studentDetail = [
+            {
+                name : "Chom Rouen",
+                age : 18,
+                batch : 4,
+                gender: "Male"
+            },
+            {
+                name : "Chhayrith",
+                age : 17,
+                batch : 4,
+                gender : "male"
+            },
+            {
+                name :"Samnang",
+                age : 17,
+                batch : 4,
+                gender : "male"
+            }
+        ]
+        for (var i = 0; i <= studentDetail.length; i++){
+            for(var j = 0; j<4; j++){
+                document.write(studentDetail[i][j]);
+                document.write("<br>");
+            }
+        }
+    </script>
+</body>
+</html>

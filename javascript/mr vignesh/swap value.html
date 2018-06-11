@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Swapping value using JS</title>
+
+</head>
+<body>
+    
+
+
+
+
+    <script>
+        var arr1 = [1, 2, 3, 4, 5];
+        var arr2 = [10, 20, 30, 40, 50, 60];
+        document.write("<h2> Before Swapping the vlaue</h2>");
+        document.write("<p>The first array element.</p>");
+        for (i = 0; i < arr1.length; i++){
+            document.write(arr1[i] + "<br>");
+        }
+        document.write("<p>The second array</p>");
+        for(i = 0; i < arr2.length; i++){
+            document.write(arr2[i] + "<br>");
+        }
+        document.write("<button type='button' onclick='swap()'>Swap</button>");
+        var temp = [];
+        var min;
+        if(arr1.length < arr2.length){
+            min = arr1.length;
+        }else if(arr1.length == arr2.length){
+            min = arr1.length;
+        }else{
+            min = arr2.length;
+        }
+        function swap(){
+            for(i = 0; i < min; i++){
+                temp[i] = arr2[i];
+                console.log("Temp ", temp.length);
+                arr2[i] = arr1[i];
+                console.log("arr2: ", arr2[i]);
+                arr1[i] = temp[i];
+                console.log("Array 1: ", arr1[i]);
+            }
+            document.write("<h2> After Swapping the vlaue</h2>");
+            document.write("<p>The first array element.</p>");
+            for (i = 0; i < arr1.length; i++){
+                document.write(arr1[i] + "<br>");
+            }
+            document.write("<p>The second array</p>");
+            for(i = 0; i < arr2.length; i++){
+                document.write(arr2[i] + "<br>");
+            }
+        }
+    
+    </script>
+</body>
+</html>

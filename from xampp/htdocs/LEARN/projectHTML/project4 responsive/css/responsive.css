@@ -1,0 +1,111 @@
+@media screen and (min-width: 1300px) {
+    .container {
+        width: 1300px;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1300px) {
+    .container {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .color-list {
+        width: 100%;
+        position: relative;
+    }
+    .color-tomato,
+    .color-orange,
+    .color-dodgerblue,
+    .color-mediumseagreen,
+    .color-gray,
+    .color-slateblue,
+    .color-violet,
+    .color-lightgray {
+        width: 18%;
+        margin: 15px;
+        padding: 8px 16px;
+        text-align: center;
+        color: #fff;
+        line-height: 80px;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 899px) {
+    .container {
+        width: 600px;
+        margin: 0 auto; 
+    }
+    .color-list {
+        width: 100%;
+        position: relative;
+    }
+    .color-tomato,
+    .color-orange,
+    .color-dodgerblue,
+    .color-mediumseagreen,
+    .color-gray,
+    .color-slateblue,
+    .color-violet {
+        width: 23%;
+        margin: 15px;
+        padding: 8px 16px;
+        text-align: center;
+        color: #fff;
+        line-height: 80px;
+        float: left;
+    }
+    .color-lightgray {
+        width: 23%;
+        margin: 15px;
+        padding: 8px 16px;
+        text-align: center;
+        color: #fff;
+        line-height: 80px;
+        position: relative;
+        display: block;
+    }
+    .hyperlink {
+        margin: 15px;
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+    }
+    .margin {
+        top: 20px;
+        position: relative;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .container {
+        width: 350px;
+        margin: 0 auto;
+        font-size: 12px;
+    }
+    .color-list {
+        width: 100%;
+        position: relative;
+    }
+    .color-tomato,
+    .color-orange,
+    .color-dodgerblue,
+    .color-mediumseagreen,
+    .color-gray,
+    .color-slateblue,
+    .color-violet,
+    .color-lightgray {
+        width: 32%;
+        margin: 15px;
+        padding: 8px 16px;
+        text-align: center;
+        color: #fff;
+        line-height: 50px;
+        float: left;
+    }
+}

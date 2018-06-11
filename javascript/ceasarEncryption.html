@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ceasar Encryption</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="txt" placeholder="Input text you want to encrypt">
+        <br>
+        <input type="number" id="shift" placeholder="Input shift condition you want">
+        <br>
+        <input type="submit" value="Submit" onclick="encrypt()">
+    </form>
+    <div id="result">
+        <p id="resultText"></p>
+    </div>
+
+
+    <script>
+        let char = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+        let encrypted = "";
+        console.log("Type of : "+ char.length);
+        console.log(encrypted);
+        function encrypt(){
+            var txt = document.getElementById("txt").value;
+            console.log("The length of TXT is : " + txt.length);
+            var shift = document.getElementById("shift").value;
+            
+            for(i = 0; i < txt.length; i++){
+                console.log(true);
+                let ch = char.indexOf(txt[i]);
+                console.log("Index of ch " + ch);
+                let shifted = ch + shift;
+
+                if(shifted > char.length){
+                    shifted = char.length - (shifted + 1);
+                    console.log("Shilfted value is : " + shifted);
+                }
+                encrypted += char[shifted];
+                console.log("The encrypted char: " + encrypted);
+            }
+            // console.log("The encrypted result: " + encrypted);
+            document.getElementById("resultText").innerHTML = "The result of encrypted text is : " + encrypted;
+            document.write(encrypted);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Hotel room availability checking.</title>
+</head>
+<body>
+    
+    <script>
+        function hotelChecking (name, room, booked){
+            this.roomName = name;
+            this.roomNum = room;
+            this.roomBooked = booked;
+            this.available = function(){
+                return roomAvailable = this.roomNum - this.roomBooked;
+            }
+        }
+
+        var hotel1 = new hotelChecking("rith", 40, 20);
+        var hotel2 = new hotelChecking("Hy Chhayrith", 30, 12);
+        console.log("Hotel 1 name: " + hotel1.roomName);
+        console.log("Hotel 1 room: " + hotel1.roomNum);
+        console.log("Hotel 1 book: " + hotel1.roomBooked);
+        console.log("Hotel 1 available: " + hotel1.available());
+        console.log("Hotel 2 name: " + hotel2.roomName);
+        console.log("Hotel 2 room: " + hotel2.roomNum);
+        console.log("Hotel 2 book: " + hotel2.roomBooked);
+        console.log("Hotel 2 available: " + hotel2.available());
+    </script>
+</body>
+</html>

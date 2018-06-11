@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cancatenate two string</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <input type="text" id="text1" name="text">
+        <br>
+        <input type="text" id="text2" name="text">
+        <br>
+        <input type="submit" value="Submit" onclick="cancatenateString()">
+    </form>
+    <script>
+        
+        function cancatenateString(){
+            var text1 = document.getElementById("text1").value;
+            var text2 = document.getElementById("text2").value;
+            var textCancatenate = text1 + " " +  text2;
+            alert(textCancatenate);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Koulen');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@font-face {
+    font-family: chalkFont;
+    src: url(Chalkduster.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.pageWrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav {
+    margin: 0;
+    width: 100%;
+    background-color: #161616;
+    height: 150px;
+}
+
+.top {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.list {
+    list-style: none;
+    margin: 0;
+    /* margin: 0 auto; */
+    /* text-align: right; */
+    /* padding: 0; */
+    /* width: 100%; */
+}
+
+img.logo {
+    width: 125px;
+    height: 120px;
+    padding: 13px 0;
+}
+
+.leftTopNav {
+    padding: ;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.rightTopNav {
+    float: right;
+    width: 70%;
+}
+
+.clearBoth::before,
+.clearBoth::after {
+    display: table;
+    content: "";
+}
+
+.clearBoth::after {
+    clear: both;
+}
+
+.adsBlock {
+    padding-top: 19px;
+}
+
+.navBottom {
+    margin: 0px;
+    padding: 0px;
+    background-color: red;
+    height: 50px;
+}
+
+.imgAds{
+    width: 800px;
+    height: auto;
+    opacity: 0.8;
+}
+
+.bottom {
+    margin: 0 auto;
+    width: 1300px;
+}
+
+li.item {
+    color: #fff;
+    float: left;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight:  lighter;
+    font-family: 'Roboto', sans serif;
+    text-align: left;
+    background: linear-gradient(to bottom, #e09699 30%, #D90C16 93%);
+    background-size: 100% 0em;
+    background-position: 0 88%;
+    background-repeat: no-repeat;
+}
+
+li.item:hover {
+    background-size: 100% 100%;
+    transition: background-size .50s ease-out;
+}
+
+.active {
+    background-color: #D90C16;
+    color: #fff;
+    float: left;
+    padding: 7px 20px;
+    font-size: 18px;
+    font-family: 'Koulen', cursive;
+    text-align: left;
+}
+
+.bottomLeft {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    float: left;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 1300px;
+    margin: 15px auto;
+}
+
+.trendingNews {
+    width: 60%;
+    float: left;
+}
+
+.adsVid {
+    width: 35%;
+    height: 100px;
+    /* background: black; */
+}

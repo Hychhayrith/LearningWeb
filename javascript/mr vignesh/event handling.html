@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Event Handling in JS</title>     
+</head>
+<body onload="getDate('tomorrow')">
+    
+
+
+    <script>
+        var day = new Date();
+        console.log(day.getDate());
+        // var today = day.getDate();
+        var getDate = (iptDay) => {
+            if (iptDay == 'today'){
+                var dT = day.getDate();
+                console.log("Today is ", dT);
+            }else if(iptDay == 'yesterday'){
+                var dT = day.getDate() - 1;
+                console.log("Yesterday is ", dT);
+            }else if(iptDay == 'tomorrow'){
+                var dT = day.getDate() + 1;
+                console.log("Tomorrow is ", dT);
+            }
+        }
+    </script>
+</body>
+</html>

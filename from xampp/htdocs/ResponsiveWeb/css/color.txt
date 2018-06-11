@@ -1,0 +1,3 @@
+footer background color: #311b92;
+footer background color: #473501;
+footer bottom background color: #000063;

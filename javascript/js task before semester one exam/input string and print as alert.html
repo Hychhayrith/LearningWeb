@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program to get input string and print as alert</title>
+</head>
+<body>
+    <form action="#" method="Get">
+        <input type="text" id="input" name="text">
+        <input type="submit" value="submit" onclick="text1()">
+    </form>
+    <script>
+        function text1(){
+            var input = document.getElementById("input").innerHTML;
+            console.log("input " + input);
+            alert("You have input : " + input);
+        }
+        
+    </script>
+</body>
+</html>

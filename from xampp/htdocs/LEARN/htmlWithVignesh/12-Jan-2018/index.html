@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Attribute Selector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Hy chhayrith">
+    <meta name="description" content="This is the attribute selector">
+    <meta name="keywords" content="attribute, selector, hy chhayrith">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    
+</head>
+<body>
+    <h1>The NOT negation1</h1>
+    <div class="text">
+        <pre>
+            p:not(.demo1){
+                background:red;
+            }
+        </pre>
+        <p>All the paragraph tag beside the the class of demo1 will have the background of red</p>
+    </div>
+    <hr>
+
+    <h1>The parent and the child element function</h1>
+    <div class="text">
+        <pre>
+            div>p{
+                color: blue;
+            }
+        </pre>
+        <p>All the p tag inside the division tag will have the color of blue.</p>
+    </div>
+
+    <hr>
+    <h1>The + sign</h1>
+    <div class="text">
+        <pre>
+            < p class="demo1">Hi sokment</ p>
+            < p class="demo2">Hi Vuthy</ p>
+            < p class="demo2">Hi Vuthy</ p>
+
+            
+                p.demo1 + p{
+                    color: red;
+                }
+            
+        </pre>
+    </div>
+    
+    
+</body>
+</html>

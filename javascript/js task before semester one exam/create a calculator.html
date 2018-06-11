@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create a calculator.</title>
+</head>
+<body>
+    <script>
+        
+        function calculator (){
+            var choice = parseInt(prompt("Choose your type of calcualation. <br> 1. Addition <br> 2. Subtraction <br> 3. Multiplication <br> 4. Division <br> 5. Modulo Division"));
+            // choice = parseInt.choice;
+            var first = parseInt(prompt("Enter the first operand "));
+            // first = parseInt.first;
+            var second = parseInt(prompt("Enter the second operend"));
+            // second = parseInt.second;
+            var result=0;   
+            switch(choice){
+                case 1: 
+                    result = first + second;
+                    return result;
+                    // break;
+                case 2:
+                    result = first - second;
+                    return result;
+                    // break;
+                case 3: 
+                    result = first * second;
+                    return result;
+                    // break;
+                case 4: 
+                    result = first / second;
+                    return result;
+                    // break;
+                case 5:
+                     result = first % second;
+                    return result;
+                    // break;    
+                default:
+                    return result;
+            }
+        }
+        document.write("The result of your calculation is: " + calculator());
+    </script>
+</body>
+</html>

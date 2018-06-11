@@ -1,0 +1,5 @@
+https://www.w3resource.com/javascript-exercises/javascript-function-exercise-3.php
+
+Author: Hy Chhayrith
+Date: 11/Jan/2018
+Purpose: This webpage will get the input from the user and show all the possible combination of the input string.
